@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarita Jamwal — Front-End Developer</title>
+  <meta name="description"
+    content="Sarita Jamwal — Front-End Developer with 3+ years of experience building responsive travel and booking websites, live flight-fare search and CRM front-ends using HTML, CSS, Bootstrap and JavaScript.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Flight path scroll tracker (signature element, desktop only) -->
+  <div class="flight-track d-none d-lg-block" aria-hidden="true">
+    <svg class="flight-track__line" width="2" height="100%" viewBox="0 0 2 100">
+      <line x1="1" y1="0" x2="1" y2="100" stroke-dasharray="1,6" />
+    </svg>
+    <div class="flight-track__plane" id="flightPlane">✈</div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">SJ<span class="brand-dot">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-hire">Why Hire Me</a></li>
+          <li class="nav-item">
+            <a class="btn btn-cta btn-sm ms-lg-2" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <p class="eyebrow reveal">Boarding Pass · Front-End Developer</p>
+          <h1 class="hero__title reveal">
+            Hi, I'm <span class="text-accent-primary">Sarita Jamwal</span>
+          </h1>
+          <p class="hero__role reveal">
+            <span id="typedRole"></span><span class="cursor">|</span>
+          </p>
+          <p class="hero__desc reveal">
+            I design and build fast, responsive websites — with 3+ years of hands-on
+            experience crafting travel booking platforms, lead-generation landing pages
+            and a Sales CRM that are clean, mobile-first, and built to convert.
+          </p>
+          <div class="hero__cta reveal">
+            <a href="resume/Sarita_Jamwal_Resume.pdf" class="btn btn-cta" download>Download Resume</a>
+            <a href="#contact" class="btn btn-cta-outline">Contact Me</a>
+          </div>
+
+          <div class="hero__ticket-meta reveal">
+            <div>
+              <span class="ticket-label">FROM</span>
+              <strong>MCA Graduate</strong>
+            </div>
+            <div class="ticket-divider">✈</div>
+            <div>
+              <span class="ticket-label">TO</span>
+              <strong>Your Team</strong>
+            </div>
+            <div class="ticket-divider d-none d-sm-block">·</div>
+            <div class="d-none d-sm-block">
+              <span class="ticket-label">EXPERIENCE</span>
+              <strong>3+ Years</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero__card reveal">
+            <div class="hero__card-glow"></div>
+            <div class="hero__card-body">
+              <div class="hero__avatar">SJ</div>
+              <h3>Sarita Jamwal</h3>
+              <p class="text-muted-2">Front-End Developer</p>
+              <hr>
+              <ul class="hero__card-list">
+                <li><span>Focus</span><strong>Travel &amp; Booking UIs</strong></li>
+                <li><span>Stack</span><strong>HTML · CSS · Bootstrap · JS · PHP/Laravel (Basic)</strong></li>
+                <li><span>Based in</span><strong>Palampur, Himachal</strong></li>
+                <li><span>Status</span><strong class="status-dot">Open to Work</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="row gy-5 align-items-center">
+        <div class="col-lg-5 reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 class="section-title">Turning tickets and mockups into pixel-perfect, working interfaces.</h2>
+        </div>
+        <div class="col-lg-7 reveal">
+          <p class="section-text">
+            I'm an MCA graduate with over 3 years of professional experience as a
+            Front-End Developer, working closely with backend teams to ship
+            production-ready websites. My core strength is building responsive,
+            mobile-first, cross-browser interfaces using HTML5, CSS3,
+            Bootstrap 5, and JavaScript (ES6+).
+          </p>
+          <p class="section-text">
+            Most of my recent work has been in the <strong>travel industry</strong> —
+            building flight and cruise booking pages, live fare search using a flight
+            API, and lead-generation landing pages — plus a Sales CRM that I worked on
+            as part of a three-member team. I also use AI tools to speed up development
+            and debugging, and I care about clean code and interfaces that feel
+            effortless to use.
+          </p>
+          <div class="about-stats row g-4 mt-2">
+            <div class="col-4">
+              <div class="stat-num" data-count="3">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="col-4">
+              <div class="stat-num" data-count="6">0</div>
+              <div class="stat-label">Key Projects</div>
+            </div>
+            <div class="col-4">
+              <div class="stat-num" data-count="100">0</div>
+              <div class="stat-label">% Responsive Focus</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <p class="eyebrow reveal text-center">Skills</p>
+      <h2 class="section-title text-center reveal">What I Fly With</h2>
+      <p class="section-text text-center mx-auto reveal" style="max-width:600px;">
+        The core tools I use every day to design, build, and ship interfaces.
+      </p>
+
+      <div class="row g-4 mt-4">
+        <div class="col-md-6 reveal">
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>HTML5</span><span class="skill-bar__pct">95%</span></div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>CSS3</span><span class="skill-bar__pct">90%</span></div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>Bootstrap 5</span><span class="skill-bar__pct">90%</span></div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-width="90"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>JavaScript</span><span class="skill-bar__pct">80%</span></div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>PHP (Basic)</span><span class="skill-bar__pct">65%</span></div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-width="65"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>Laravel (Basic)</span><span class="skill-bar__pct">50%</span></div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-width="50"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>REST API Integration</span><span class="skill-bar__pct">70%</span></div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-width="70"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>Responsive / Cross-browser</span><span class="skill-bar__pct">95%</span>
+            </div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-width="95"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card__stack justify-content-center mt-4 reveal">
+        <span>Git &amp; GitHub</span><span>Landing Page Optimization</span><span>Lead Generation</span><span>AI-assisted
+          Development</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="eyebrow reveal text-center">Featured Work</p>
+      <h2 class="section-title text-center reveal">Projects That Landed</h2>
+      <p class="section-text text-center mx-auto reveal" style="max-width:600px;">
+        A selection of real work — the Bookviaus India &amp; UK websites, booking platforms with live fare search, and a
+        team-built Sales CRM.
+      </p>
+
+      <div class="row g-4 mt-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="project-card">
+            <div class="project-card__thumb thumb--1">
+              <span class="project-card__tag">CRM</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Sales CRM (travel360crm.com)</h3>
+              <p>CRM for managing leads and tracking customer data, built in a team of three with two senior developers.
+                I handled the front-end design and basic Laravel functionality.</p>
+              <div class="project-card__stack">
+                <span>HTML</span><span>CSS</span><span>JS</span><span>Laravel (Basic)</span>
+              </div>
+              <a href="https://travel360crm.com" class="project-card__link" target="_blank" rel="noopener">View Project
+                →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="project-card">
+            <div class="project-card__thumb thumb--2">
+              <span class="project-card__tag">Travel</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Bookviaus India (bookviaus.in)</h3>
+              <p>Responsive travel and booking website for the Indian market, built mobile-first with clean UX and
+                cross-browser support.</p>
+              <div class="project-card__stack">
+                <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JS</span>
+              </div>
+              <a href="https://bookviaus.in" class="project-card__link" target="_blank" rel="noopener">View Project
+                →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="project-card">
+            <div class="project-card__thumb thumb--4">
+              <span class="project-card__tag">Travel</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Bookviaus UK (bookviaus.co.uk)</h3>
+              <p>The UK version of the Bookviaus travel and booking platform, fully responsive and optimized for
+                enquiries and bookings.</p>
+              <div class="project-card__stack">
+                <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JS</span>
+              </div>
+              <a href="https://bookviaus.co.uk" class="project-card__link" target="_blank" rel="noopener">View Project
+                →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="project-card">
+            <div class="project-card__thumb thumb--2">
+              <span class="project-card__tag">Travel</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Flight Booking Websites</h3>
+              <p>Multiple fully responsive flight booking websites with clean UX and mobile usability, with live fare
+                search powered by the Ignav flight API.</p>
+              <div class="project-card__stack">
+                <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JS</span><span>Flight API</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="project-card">
+            <div class="project-card__thumb thumb--3">
+              <span class="project-card__tag">Travel</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Cruise Booking Website</h3>
+              <p>Interactive, responsive cruise booking layouts with smooth navigation and strong visual appeal.</p>
+              <div class="project-card__stack">
+                <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JS</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="project-card">
+            <div class="project-card__thumb thumb--4">
+              <span class="project-card__tag">Travel</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Travel Agency Website</h3>
+              <p>Promotional travel websites focused on conversions, with lead capture forms and booking inquiry flows.
+              </p>
+              <div class="project-card__stack">
+                <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JS</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <p class="eyebrow reveal text-center">Experience</p>
+      <h2 class="section-title text-center reveal">The Journey So Far</h2>
+
+      <div class="timeline mt-5">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">March 2023 — September 2026</span>
+            <h3>Front-End Developer</h3>
+            <p class="timeline__company">Bookviaus · Travel &amp; Booking Platforms</p>
+            <ul>
+              <li>Designed and developed responsive travel and booking websites using HTML5, CSS3, Bootstrap 5, and
+                JavaScript.</li>
+              <li>Built multiple flight booking websites and integrated a flight API for live fare search.</li>
+              <li>Built high-converting landing pages optimized for lead generation and booking inquiries.</li>
+              <li>Worked on a Sales CRM (travel360crm.com) in a team of three: front-end design and basic Laravel
+                functionality.</li>
+              <li>Ensured cross-browser compatibility and mobile-first responsiveness across all projects.</li>
+              <li>Collaborated with backend teams on new features and integrations, and managed ongoing updates and
+                performance improvements.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2020</span>
+            <h3>Master of Computer Applications</h3>
+            <p class="timeline__company">Chitkara University</p>
+            <ul>
+              <li>Built a strong foundation in programming, data structures, and web technologies.</li>
+              <li>Focused academic and personal projects on front-end development.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2018</span>
+            <h3>Bachelor of Computer Applications</h3>
+            <p class="timeline__company">TJCM Govt. Degree College, HP</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY HIRE ME -->
+  <section class="section" id="why-hire">
+    <div class="container">
+      <p class="eyebrow reveal text-center">Why Hire Me</p>
+      <h2 class="section-title text-center reveal">Four Reasons I'm a Safe Bet</h2>
+
+      <div class="row g-4 mt-4">
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="why-card">
+            <div class="why-card__icon">⌗</div>
+            <h3>Responsive Design</h3>
+            <p>Every build works cleanly across mobile, tablet, and desktop — no exceptions.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="why-card">
+            <div class="why-card__icon">{ }</div>
+            <h3>API Integration</h3>
+            <p>Connected a flight API for live fare search, with results rendered smoothly on the page.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="why-card">
+            <div class="why-card__icon">✈</div>
+            <h3>Travel Website Experience</h3>
+            <p>Real experience with flight and cruise booking pages, lead capture, and travel UX patterns.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 reveal">
+          <div class="why-card">
+            <div class="why-card__icon">◱</div>
+            <h3>Team &amp; CRM Experience</h3>
+            <p>Worked with senior developers on a Sales CRM, covering front-end design and basic Laravel work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-5 reveal">
+          <p class="eyebrow eyebrow--light">Get In Touch</p>
+          <h2 class="section-title section-title--light">Let's build something that ships.</h2>
+          <p class="section-text section-text--light">
+            Open to Front-End Developer roles and freelance projects. Reach out —
+            I usually reply within a day.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list__label">Email</span>
+              <a href="mailto:sjamwal610@gmail.com">sjamwal610@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-list__label">Phone</span>
+              <a href="tel:+917807015983">+91 78070 15983</a>
+            </li>
+            <li>
+              <span class="contact-list__label">Location</span>
+              <span>Palampur, Himachal Pradesh</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-7 reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="cf-name">Name</label>
+                <input type="text" class="form-control" id="cf-name" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="cf-email">Email</label>
+                <input type="email" class="form-control" id="cf-email" placeholder="you@example.com" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="cf-subject">Subject</label>
+                <input type="text" class="form-control" id="cf-subject" placeholder="What's this about?">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="cf-message">Message</label>
+                <textarea class="form-control" id="cf-message" rows="4"
+                  placeholder="Tell me a bit about the role or project..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-cta w-100 w-sm-auto">Send Message</button>
+                <p class="form-note mt-2 mb-0" id="formNote"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sarita Jamwal. Built with HTML, CSS &amp; Bootstrap.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
